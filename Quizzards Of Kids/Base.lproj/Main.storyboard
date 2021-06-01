@@ -1,0 +1,1492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Okx-PX-Spj">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HVD_Comic_Serif_Pro.otf">
+            <string>HVDComicSerifPro</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Quizzards Of Kids-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hSR-wD-5Dv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lqo-Zx-RJ2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lou-Yw-12j">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V2L-WP-yqF">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frame" translatesAutoresizingMaskIntoConstraints="NO" id="847-TY-36H">
+                                <rect key="frame" x="20" y="126" width="374" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quizzards Of Kids" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W90-ky-OzP">
+                                <rect key="frame" x="20" y="159" width="374" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="32"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuT-sz-ldy">
+                                <rect key="frame" x="104" y="337" width="207" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="frame"/>
+                                <connections>
+                                    <action selector="startClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nVU-6q-zDm"/>
+                                    <segue destination="ksm-Hf-LFK" kind="push" id="Hie-CZ-Kba"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Get Started!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ulk-cu-IJc">
+                                <rect key="frame" x="141" y="362" width="133" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="21"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quizzards Of Kids" id="GxM-Id-4z0"/>
+                    <connections>
+                        <outlet property="gradientView" destination="lou-Yw-12j" id="jTt-Lu-7Bk"/>
+                        <outlet property="movieView" destination="V2L-WP-yqF" id="aby-V2-php"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2799" y="321"/>
+        </scene>
+        <!--Quizzards Of Kids-->
+        <scene sceneID="hEf-GD-cdW">
+            <objects>
+                <viewController id="ksm-Hf-LFK" customClass="ViewControllerTwo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qwH-vZ-v8o"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cns-Sw-eOi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rof-pF-EPo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Aw3-Tq-Dqp">
+                                <rect key="frame" x="0.0" y="55" width="414" height="638"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbN-9h-uJO">
+                                <rect key="frame" x="56" y="121" width="303" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="23"/>
+                                <state key="normal" title="Math and Astronomy" backgroundImage="frame">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="quizOneClick:" destination="ksm-Hf-LFK" eventType="touchUpInside" id="VTM-7n-CpU"/>
+                                    <segue destination="5aS-pO-Epk" kind="push" id="796-Of-tMy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVZ-3U-NUS">
+                                <rect key="frame" x="56" y="293" width="303" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="23"/>
+                                <state key="normal" title="Science" backgroundImage="frame">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="quizTwoClick:" destination="ksm-Hf-LFK" eventType="touchUpInside" id="5xh-xJ-ktG"/>
+                                    <segue destination="J4h-ij-9WE" kind="push" id="bt6-D0-wzM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RiQ-rz-mKA">
+                                <rect key="frame" x="56" y="461" width="303" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="23"/>
+                                <state key="normal" title="General technology" backgroundImage="frame">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="quizThreeClick:" destination="ksm-Hf-LFK" eventType="touchUpInside" id="Rgk-Ju-uaG"/>
+                                    <segue destination="4kn-rV-eE7" kind="push" id="8Q6-8F-SZ2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quizzards Of Kids" id="AF2-0x-xAe"/>
+                    <connections>
+                        <outlet property="myBackgroundImage" destination="Aw3-Tq-Dqp" id="x95-BU-Ncp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgC-5X-r2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3700.0000000000005" y="320.38043478260875"/>
+        </scene>
+        <!--Quizzards Of Kids-->
+        <scene sceneID="kG9-Jk-0nY">
+            <objects>
+                <viewController id="J4h-ij-9WE" customClass="FillQuizViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OGV-mp-RMu"/>
+                        <viewControllerLayoutGuide type="bottom" id="vW1-Ey-pIw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gCa-FI-RNl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="kyR-6h-u6c">
+                                <rect key="frame" x="0.0" y="55" width="414" height="635"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="score" translatesAutoresizingMaskIntoConstraints="NO" id="UZl-9e-iTQ">
+                                <rect key="frame" x="20" y="69" width="119" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbT-os-0td">
+                                <rect key="frame" x="20" y="113" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="17"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9w-an-UXg">
+                                <rect key="frame" x="66" y="78" width="51" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0Z-Cg-JBr">
+                                <rect key="frame" x="78" y="566" width="254" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <state key="normal" title="Check your result!" backgroundImage="frame">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkResultClick:" destination="J4h-ij-9WE" eventType="touchUpInside" id="JZB-Mu-Z8t"/>
+                                    <action selector="checkResultClick:" destination="5aS-pO-Epk" eventType="touchUpInside" id="RzD-sG-O5G"/>
+                                    <segue destination="OPV-HC-jY9" kind="push" id="YYW-Ip-3dh"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your answer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LzI-PD-Bmn">
+                                <rect key="frame" x="66" y="429" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" spellCheckingType="yes" keyboardType="namePhonePad" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zm6-pL-CCt">
+                                <rect key="frame" x="27" y="301" width="360" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ps-kO-DnA">
+                                <rect key="frame" x="290" y="422" width="94" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="20"/>
+                                <state key="normal" title="Enter" backgroundImage="frame">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterAnswerClick:" destination="J4h-ij-9WE" eventType="touchUpInside" id="EsX-lw-92s"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="tSC-Kp-8f0">
+                                <rect key="frame" x="272" y="69" width="120" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkb-1I-Q9G">
+                                <rect key="frame" x="290" y="79" width="58" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IYH-7r-bOz">
+                                <rect key="frame" x="78" y="566" width="254" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <state key="normal" title="Next &gt;" backgroundImage="frame">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextQuestionClick:" destination="J4h-ij-9WE" eventType="touchUpInside" id="AH2-sA-AMr"/>
+                                    <action selector="nextQuestionClick:" destination="5aS-pO-Epk" eventType="touchUpInside" id="AYF-mT-5Mb"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k0V-hc-jAC">
+                                <rect key="frame" x="42" y="142" width="329" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quizzards Of Kids" id="HHT-Fk-hjh"/>
+                    <connections>
+                        <outlet property="myBackgroundImage" destination="kyR-6h-u6c" id="2rZ-l9-W7Z"/>
+                        <outlet property="myCheckResultButton" destination="x0Z-Cg-JBr" id="1N2-F6-2xa"/>
+                        <outlet property="myEnterButton" destination="4ps-kO-DnA" id="d4y-bL-dM7"/>
+                        <outlet property="myNextButton" destination="IYH-7r-bOz" id="9UF-QG-bW1"/>
+                        <outlet property="myQuestionImage" destination="k0V-hc-jAC" id="zrX-J5-SpM"/>
+                        <outlet property="myQuestionLabel" destination="Zm6-pL-CCt" id="Egc-cZ-TYA"/>
+                        <outlet property="myQuestionNumLabel" destination="XbT-os-0td" id="Lko-vl-dfv"/>
+                        <outlet property="myScoreLabel" destination="w9w-an-UXg" id="IcC-I1-Aqh"/>
+                        <outlet property="myTextfield" destination="LzI-PD-Bmn" id="cwf-zg-KSq"/>
+                        <outlet property="myTimeLabel" destination="tkb-1I-Q9G" id="sa7-v2-qpU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WKY-hd-YDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4643.4782608695659" y="1112.771739130435"/>
+        </scene>
+        <!--Quizzards Of Kids-->
+        <scene sceneID="otp-JG-bdr">
+            <objects>
+                <viewController id="5aS-pO-Epk" customClass="McQuizViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rPe-jK-5qW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y0O-v2-sR0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wvn-ka-V2N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Ifa-pn-rTD">
+                                <rect key="frame" x="0.0" y="53" width="414" height="635"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBy-2K-hMt">
+                                <rect key="frame" x="80" y="588" width="254" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <state key="normal" title="Check your result!" backgroundImage="frame">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkResultClick:" destination="5aS-pO-Epk" eventType="touchUpInside" id="rBX-8R-YjW"/>
+                                    <segue destination="OPV-HC-jY9" kind="push" id="QhH-AS-pmE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ukr-6u-AVr">
+                                <rect key="frame" x="20" y="393" width="176" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="AnswerAClick:" destination="5aS-pO-Epk" eventType="touchUpInside" id="bfD-oe-G9d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDg-EG-RfN">
+                                <rect key="frame" x="218" y="393" width="176" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="AnswerBClick:" destination="5aS-pO-Epk" eventType="touchUpInside" id="HfD-IC-dO1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9p-Sp-Gju">
+                                <rect key="frame" x="20" y="494" width="176" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="AnswerCClick:" destination="5aS-pO-Epk" eventType="touchUpInside" id="t5f-Yj-jOk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIn-JH-YZo">
+                                <rect key="frame" x="218" y="494" width="176" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="AnswerDClick:" destination="5aS-pO-Epk" eventType="touchUpInside" id="Z94-3k-t82"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="score" translatesAutoresizingMaskIntoConstraints="NO" id="wdo-fM-Vff">
+                                <rect key="frame" x="20" y="73" width="119" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGm-l0-Xrj">
+                                <rect key="frame" x="20" y="117" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="17"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UKL-AN-ltc">
+                                <rect key="frame" x="20" y="146" width="374" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="Rdf-Af-7Jt">
+                                <rect key="frame" x="279" y="73" width="120" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWr-JI-4aV">
+                                <rect key="frame" x="297" y="83" width="58" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hp-I8-ETq">
+                                <rect key="frame" x="20" y="494" width="176" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTy-mU-7Iv">
+                                <rect key="frame" x="20" y="393" width="176" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ud-l7-RWw">
+                                <rect key="frame" x="218" y="393" width="176" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="lightTextColor"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tar-Qp-P8Z">
+                                <rect key="frame" x="218" y="494" width="176" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4v-AO-fJj">
+                                <rect key="frame" x="66" y="82" width="51" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPg-KZ-7lk">
+                                <rect key="frame" x="20" y="295" width="374" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMj-K8-qE0">
+                                <rect key="frame" x="80" y="588" width="254" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <state key="normal" title="Next &gt;" backgroundImage="frame">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextQuestionClick:" destination="5aS-pO-Epk" eventType="touchUpInside" id="Tsg-Er-DGw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quizzards Of Kids" id="2b8-bh-aVj"/>
+                    <connections>
+                        <outlet property="myAnswerAButton" destination="Ukr-6u-AVr" id="1Bj-K4-0LR"/>
+                        <outlet property="myAnswerALabel" destination="iTy-mU-7Iv" id="34W-nM-7Sl"/>
+                        <outlet property="myAnswerBButton" destination="LDg-EG-RfN" id="lMZ-q0-PsK"/>
+                        <outlet property="myAnswerBLabel" destination="2Ud-l7-RWw" id="0kY-7P-nf8"/>
+                        <outlet property="myAnswerCButton" destination="D9p-Sp-Gju" id="OEv-3s-y01"/>
+                        <outlet property="myAnswerCLabel" destination="9hp-I8-ETq" id="hFa-Zc-VVA"/>
+                        <outlet property="myAnswerDButton" destination="wIn-JH-YZo" id="fjN-nd-kNT"/>
+                        <outlet property="myAnswerDLabel" destination="tar-Qp-P8Z" id="3a7-TD-ec6"/>
+                        <outlet property="myBackgroundImage" destination="Ifa-pn-rTD" id="weU-YJ-qny"/>
+                        <outlet property="myCheckResultButton" destination="JBy-2K-hMt" id="yEw-Fj-ZV9"/>
+                        <outlet property="myNextButton" destination="mMj-K8-qE0" id="6Ge-DD-3xI"/>
+                        <outlet property="myQuestionImage" destination="UKL-AN-ltc" id="WRg-Ax-7jM"/>
+                        <outlet property="myQuestionLabel" destination="UPg-KZ-7lk" id="nfE-tI-eMA"/>
+                        <outlet property="myQuestionNumLabel" destination="nGm-l0-Xrj" id="9yM-gI-Hfp"/>
+                        <outlet property="myScoreLabel" destination="c4v-AO-fJj" id="Z9z-Q1-SPh"/>
+                        <outlet property="myTimeLabel" destination="PWr-JI-4aV" id="jhQ-yH-1uq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzQ-P1-IDR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4643.4782608695659" y="320.38043478260875"/>
+        </scene>
+        <!--Quizzards Of Kids-->
+        <scene sceneID="ij2-Hf-wb8">
+            <objects>
+                <viewController id="OPV-HC-jY9" customClass="ResultViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G3Q-I5-iOk"/>
+                        <viewControllerLayoutGuide type="bottom" id="oB1-JN-ZTJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eBC-O4-beH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="82s-1f-qs6">
+                                <rect key="frame" x="0.0" y="58" width="414" height="630"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="xx" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcf-gK-ukR">
+                                <rect key="frame" x="241" y="333" width="45" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your have scored" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObR-2Z-kqd">
+                                <rect key="frame" x="45" y="333" width="194" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="points!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gno-cD-HJ3">
+                                <rect key="frame" x="290" y="333" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRC-nf-aBy">
+                                <rect key="frame" x="172" y="155" width="71" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mqi-IA-0cg">
+                                <rect key="frame" x="79" y="190" width="259" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riK-3T-ZgE">
+                                <rect key="frame" x="113" y="394" width="189" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="frame">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartClick:" destination="OPV-HC-jY9" eventType="touchUpInside" id="Dh5-G4-j1b"/>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="DDp-oB-POn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6O6-Fu-grm">
+                                <rect key="frame" x="165" y="422" width="85" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoX-Tq-ZOF">
+                                <rect key="frame" x="133" y="283" width="148" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quizzards Of Kids" id="GS9-aK-cV2"/>
+                    <connections>
+                        <outlet property="myBackgroundImage" destination="82s-1f-qs6" id="rdq-nw-WQA"/>
+                        <outlet property="myRankLabel" destination="qoX-Tq-ZOF" id="YCs-hJ-rgD"/>
+                        <outlet property="myResultImage" destination="Mqi-IA-0cg" id="tkX-Hb-6De"/>
+                        <outlet property="myResultLabel" destination="Qcf-gK-ukR" id="bpW-N7-BKf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CaS-eX-nLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5676.811594202899" y="319.56521739130437"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="v4j-RL-zmF">
+            <objects>
+                <viewController id="ibI-Aq-zk9" customClass="SettingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cHn-yM-iri"/>
+                        <viewControllerLayoutGuide type="bottom" id="OVB-cv-PuT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OD5-mg-SgB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="uxs-ZI-PDB">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frame" translatesAutoresizingMaskIntoConstraints="NO" id="Vnn-tR-gUW">
+                                <rect key="frame" x="92" y="209" width="229" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sounds effect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fo-Vr-gAn">
+                                <rect key="frame" x="20" y="114" width="150" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Background music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMh-am-KsY">
+                                <rect key="frame" x="20" y="162" width="211" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Red" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaJ-3i-3BB">
+                                <rect key="frame" x="19" y="483" width="41" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2l-Qv-TQm">
+                                <rect key="frame" x="19" y="531" width="66" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Background colour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMZ-ji-8vx">
+                                <rect key="frame" x="20" y="374" width="215" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="gnd-Rr-Y94">
+                                <rect key="frame" x="20" y="425" width="374" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Red"/>
+                                    <segment title="Green"/>
+                                    <segment title="Blue"/>
+                                    <segment title="Black"/>
+                                </segments>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="ibI-Aq-zk9" eventType="valueChanged" id="iM1-I9-fHz"/>
+                                </connections>
+                            </segmentedControl>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vC5-sl-WCD">
+                                <rect key="frame" x="124" y="482" width="272" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="sliderMoveRed:" destination="ibI-Aq-zk9" eventType="valueChanged" id="BaJ-IY-ZbD"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cu7-tn-7hY">
+                                <rect key="frame" x="124" y="322" width="272" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="updateVolume:" destination="ibI-Aq-zk9" eventType="valueChanged" id="IEI-a2-Ec8"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="89X-N5-iFC">
+                                <rect key="frame" x="124" y="530" width="272" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="sliderMoveGreen:" destination="ibI-Aq-zk9" eventType="valueChanged" id="TPl-wE-Urf"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7a3-AZ-IwH">
+                                <rect key="frame" x="20" y="578" width="49" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qW1-tU-7p6">
+                                <rect key="frame" x="19" y="223" width="74" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="playPreviousButton"/>
+                                <connections>
+                                    <action selector="previousMusicClick:" destination="ibI-Aq-zk9" eventType="touchUpInside" id="NDH-ZG-Q4p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1N4-84-e8t">
+                                <rect key="frame" x="320" y="225" width="74" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="playNextButton">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextMusicClick:" destination="ibI-Aq-zk9" eventType="touchUpInside" id="RoK-mc-Uv9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CB-wK-6rH">
+                                <rect key="frame" x="114" y="244" width="186" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="24"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ape-Ae-C0v">
+                                <rect key="frame" x="124" y="577" width="272" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="sliderMoveBlue:" destination="ibI-Aq-zk9" eventType="valueChanged" id="EXO-5R-RNL"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vaF-aM-6tg">
+                                <rect key="frame" x="345" y="372" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="backgroundSwitch:" destination="ibI-Aq-zk9" eventType="valueChanged" id="Klx-Pt-2Sm"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Au9-GD-ocG">
+                                <rect key="frame" x="345" y="112" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="soundsEffectSwitch:" destination="ibI-Aq-zk9" eventType="valueChanged" id="jRt-Ad-Wfe"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IgO-3u-vEG">
+                                <rect key="frame" x="345" y="160" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="backgroundMusicSwitch:" destination="ibI-Aq-zk9" eventType="valueChanged" id="fIT-SD-oH3"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Volume" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIu-Hh-qqw">
+                                <rect key="frame" x="20" y="323" width="82" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Setting" id="S9Z-BO-WiU"/>
+                    <connections>
+                        <outlet property="myBackgroundImage" destination="uxs-ZI-PDB" id="fbs-0W-WwF"/>
+                        <outlet property="myBackgroundSwitch" destination="vaF-aM-6tg" id="PIO-hs-WGo"/>
+                        <outlet property="myBlueSlider" destination="Ape-Ae-C0v" id="A6w-wB-Cin"/>
+                        <outlet property="myGreenSlider" destination="89X-N5-iFC" id="Ygm-s3-xvZ"/>
+                        <outlet property="myMusicLabel" destination="4CB-wK-6rH" id="pvd-Kq-NTs"/>
+                        <outlet property="myMusicSwitch" destination="IgO-3u-vEG" id="iD1-gk-2xY"/>
+                        <outlet property="myRedSlider" destination="vC5-sl-WCD" id="7e6-bu-NGa"/>
+                        <outlet property="mySegmentControl" destination="gnd-Rr-Y94" id="5Wf-iw-MUa"/>
+                        <outlet property="mySoundSwitch" destination="Au9-GD-ocG" id="hpX-rj-Am9"/>
+                        <outlet property="myVolumeSlider" destination="cu7-tn-7hY" id="4Jz-mg-5DH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ikN-zN-ptI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2798.5507246376815" y="1112.771739130435"/>
+        </scene>
+        <!--Quizzards Of Kids-->
+        <scene sceneID="ony-Yv-mkH">
+            <objects>
+                <viewController id="4kn-rV-eE7" customClass="TFQuizViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8qd-z7-vJC"/>
+                        <viewControllerLayoutGuide type="bottom" id="CaP-o3-nfl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h4q-Yg-83a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="C4J-ug-58Z">
+                                <rect key="frame" x="0.0" y="56" width="414" height="631"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfD-tb-ajN">
+                                <rect key="frame" x="80" y="531" width="254" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <state key="normal" title="Check your result!" backgroundImage="frame">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkResultClick:" destination="J4h-ij-9WE" eventType="touchUpInside" id="MaH-1T-BEQ"/>
+                                    <action selector="checkResultClick:" destination="4kn-rV-eE7" eventType="touchUpInside" id="RFQ-Jc-yV2"/>
+                                    <action selector="checkResultClick:" destination="5aS-pO-Epk" eventType="touchUpInside" id="csk-PJ-wXQ"/>
+                                    <segue destination="OPV-HC-jY9" kind="push" id="kvM-2t-4fX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="score" translatesAutoresizingMaskIntoConstraints="NO" id="ZmT-v2-Y7d">
+                                <rect key="frame" x="20" y="75" width="119" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sxt-6L-u4G">
+                                <rect key="frame" x="48" y="147" width="325" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O66-R7-Ogr">
+                                <rect key="frame" x="20" y="326" width="374" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chj-k5-otK">
+                                <rect key="frame" x="66" y="84" width="51" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsu-vr-OZh">
+                                <rect key="frame" x="19" y="118" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="17"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekj-nc-iB0">
+                                <rect key="frame" x="222" y="418" width="112" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="falseClick:" destination="4kn-rV-eE7" eventType="touchUpInside" id="E8y-4b-oke"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErK-CE-DCI">
+                                <rect key="frame" x="80" y="418" width="112" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="trueClick:" destination="4kn-rV-eE7" eventType="touchUpInside" id="pbw-S3-K0u"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="True" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ra7-Di-Zc7">
+                                <rect key="frame" x="80" y="418" width="112" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="False" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRu-ku-MsH">
+                                <rect key="frame" x="222" y="418" width="112" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="pBn-6q-1c6">
+                                <rect key="frame" x="274" y="75" width="120" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfX-pV-gPW">
+                                <rect key="frame" x="292" y="85" width="58" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pr-fh-nSu">
+                                <rect key="frame" x="80" y="531" width="254" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <state key="normal" title="Next &gt;" backgroundImage="frame">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextQuestionClick:" destination="4kn-rV-eE7" eventType="touchUpInside" id="57O-Rz-q1X"/>
+                                    <action selector="nextQuestionClick:" destination="5aS-pO-Epk" eventType="touchUpInside" id="wdx-6H-PBO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Quizzards Of Kids" id="w0f-ks-nUM"/>
+                    <connections>
+                        <outlet property="myBackgroundImage" destination="C4J-ug-58Z" id="Jv2-gH-WaR"/>
+                        <outlet property="myCheckResultButton" destination="zfD-tb-ajN" id="KWM-go-WDp"/>
+                        <outlet property="myFalseButton" destination="ekj-nc-iB0" id="g1p-Wx-bET"/>
+                        <outlet property="myFalseLabel" destination="YRu-ku-MsH" id="keD-Xz-fQf"/>
+                        <outlet property="myNextButton" destination="9Pr-fh-nSu" id="5TN-Kg-pmB"/>
+                        <outlet property="myQuestionImage" destination="Sxt-6L-u4G" id="Azi-vE-Hd0"/>
+                        <outlet property="myQuestionLabel" destination="O66-R7-Ogr" id="3FO-1p-wT6"/>
+                        <outlet property="myQuestionNumLabel" destination="Qsu-vr-OZh" id="hf7-0e-jbv"/>
+                        <outlet property="myScoreLabel" destination="chj-k5-otK" id="A8j-V8-CmQ"/>
+                        <outlet property="myTimeLabel" destination="mfX-pV-gPW" id="3Qw-lz-3MJ"/>
+                        <outlet property="myTrueButton" destination="ErK-CE-DCI" id="f5q-av-lRy"/>
+                        <outlet property="myTrueLabel" destination="Ra7-Di-Zc7" id="ie2-5M-7gc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h6J-2h-46V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3700.0000000000005" y="1112.771739130435"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="slf-bY-9ph">
+            <objects>
+                <viewController id="Jn0-wj-hBL" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kSR-xM-pdX"/>
+                        <viewControllerLayoutGuide type="bottom" id="uJd-Eq-WwP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="29w-ap-Hl2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="B5a-kb-xsO">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5E4-7a-3f2">
+                                <rect key="frame" x="20" y="163" width="374" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Bulid a fully featured iOS quiz  app - add multiple choice questions with any combination of text, picture, video and true/false questions, andmany more configuration and customization options.</string>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0v-SI-Azi">
+                                <rect key="frame" x="95" y="555" width="62" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="FBICON"/>
+                                <connections>
+                                    <action selector="GoFb:" destination="Jn0-wj-hBL" eventType="touchUpInside" id="uX7-9g-sWL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIe-df-C13">
+                                <rect key="frame" x="252" y="552" width="67" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="insIcon"/>
+                                <connections>
+                                    <action selector="Goig:" destination="Jn0-wj-hBL" eventType="touchUpInside" id="1jh-CQ-6eN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ee-jc-MYP">
+                                <rect key="frame" x="95" y="425" width="224" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="frame"/>
+                                <connections>
+                                    <action selector="detailsClick:" destination="Jn0-wj-hBL" eventType="touchUpInside" id="XbC-2F-7tm"/>
+                                    <segue destination="a1r-9Q-UOB" kind="push" id="n5f-E9-Ao6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2h-p5-cNV">
+                                <rect key="frame" x="136" y="452" width="142" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="ONj-ua-Aho"/>
+                    <connections>
+                        <outlet property="myBackgroundImage" destination="B5a-kb-xsO" id="k2D-e3-knu"/>
+                        <outlet property="myTextView" destination="5E4-7a-3f2" id="ljJ-tN-nm4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="71e-yo-iDj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4645" y="1871"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="pRa-Jr-RCJ">
+            <objects>
+                <tableViewController id="a1r-9Q-UOB" customClass="TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ix4-69-pku">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="159" id="wO4-LE-ieO" customClass="TableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="414" height="159"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wO4-LE-ieO" id="5ip-K7-d4m">
+                                    <rect key="frame" x="0.0" y="0.0" width="382.66666666666669" height="159"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWi-2x-Aan">
+                                            <rect key="frame" x="20" y="17" width="202" height="124"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SF2-lc-Vau">
+                                            <rect key="frame" x="230" y="39" width="171" height="80"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="20"/>
+                                            <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ThumbImage" destination="eWi-2x-Aan" id="Zzh-G1-4hQ"/>
+                                    <outlet property="TitleLabel" destination="SF2-lc-Vau" id="5Au-5n-Ab7"/>
+                                    <segue destination="1mz-HF-Uxz" kind="push" identifier="ShowDetails" id="eqC-UR-8pu"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="a1r-9Q-UOB" id="1ZJ-IT-ELL"/>
+                            <outlet property="delegate" destination="a1r-9Q-UOB" id="CNx-X3-q1E"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="About" id="hTy-Bx-LIN"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fxH-Hb-l48" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5677" y="1871"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="YWQ-aF-Mvx">
+            <objects>
+                <viewController id="1mz-HF-Uxz" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Peu-lH-1Nw"/>
+                        <viewControllerLayoutGuide type="bottom" id="5be-TG-40J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tgx-9X-EP8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="4b7-G8-qC3">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQw-kS-sWj">
+                                <rect key="frame" x="87" y="130" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJQ-1h-2Ie">
+                                <rect key="frame" x="87" y="618" width="240" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <size key="titleShadowOffset" width="-1" height="0.0"/>
+                                <state key="normal" title="Button" image="frame"/>
+                                <connections>
+                                    <action selector="playMoive:" destination="1mz-HF-Uxz" eventType="touchUpInside" id="LWT-vG-GYV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9k-L4-mXY">
+                                <rect key="frame" x="24" y="313" width="366" height="297"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="20"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ge4-DW-j9Y">
+                                <rect key="frame" x="65" y="284" width="284" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="20"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Play Video" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p84-gL-l0g">
+                                <rect key="frame" x="152" y="636" width="110" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="20"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="37e-tw-P15"/>
+                    <connections>
+                        <outlet property="DescriptionLabel" destination="L9k-L4-mXY" id="3Cy-T3-ajM"/>
+                        <outlet property="ImageView" destination="hQw-kS-sWj" id="mOR-mp-tou"/>
+                        <outlet property="TitleLabel" destination="ge4-DW-j9Y" id="kcx-nn-Yvo"/>
+                        <outlet property="myBackgroundImage" destination="4b7-G8-qC3" id="b3u-4w-Fxy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hcE-lV-ugj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6579.7101449275369" y="1870.9239130434785"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Hvd-7p-FXb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Okx-PX-Spj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="271-20-e36"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="E1m-wu-Qql">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Mn9-LN-peG" kind="relationship" relationship="viewControllers" id="CNe-aR-u5V"/>
+                        <segue destination="A6M-3O-e7m" kind="relationship" relationship="viewControllers" id="Wmp-EB-fz0"/>
+                        <segue destination="PCY-s6-wTY" kind="relationship" relationship="viewControllers" id="Ai7-xl-v1e"/>
+                        <segue destination="rNw-zQ-ebD" kind="relationship" relationship="viewControllers" id="GW2-ka-xls"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zTk-0F-FFz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="1113"/>
+        </scene>
+        <!--Quizzards Of Kids-->
+        <scene sceneID="6Ek-7n-aRU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mn9-LN-peG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Quiz" image="quiz" id="Bl2-yZ-cBm"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Quizzards Of Kids" id="Nxl-4r-PIQ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bDS-VW-Gx3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8ph-ip-YUp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="olR-mq-Wad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1893" y="321"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="DAA-7S-DRl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A6M-3O-e7m" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Setting" image="setting" id="ZZ8-PD-vyO"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B5T-OE-tM2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ibI-Aq-zk9" kind="relationship" relationship="rootViewController" id="Pwx-H8-BdL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GHO-Ar-J3N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1892.753623188406" y="1112.771739130435"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="tVY-kA-Z42">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PCY-s6-wTY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="about" id="Kp7-ty-jQj"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mVZ-cP-PmB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Jn0-wj-hBL" kind="relationship" relationship="rootViewController" id="QQk-tv-EfW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="laB-9Z-iDV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3700" y="1871"/>
+        </scene>
+        <!--Tools-->
+        <scene sceneID="q28-Ax-zpf">
+            <objects>
+                <viewController id="r7d-pN-bxh" customClass="ToolController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LC1-Au-n1e"/>
+                        <viewControllerLayoutGuide type="bottom" id="vtu-ej-e23"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OHo-rf-9PT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="zDL-rk-Ibh">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image3" translatesAutoresizingMaskIntoConstraints="NO" id="ZyN-Il-D6h">
+                                <rect key="frame" x="68" y="83" width="280" height="243"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Google or type a URL" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gVx-jK-iMR">
+                                <rect key="frame" x="34" y="420" width="351" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" keyboardType="webSearch" returnKeyType="go"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07M-zG-Fde">
+                                <rect key="frame" x="20" y="510" width="149" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="20"/>
+                                <state key="normal" title="Google Go" backgroundImage="frame">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBrowserClick:" destination="r7d-pN-bxh" eventType="touchUpInside" id="Syu-J4-IU2"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="Fex-DY-v0B">
+                                <rect key="frame" x="81" y="340" width="255" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                </segments>
+                                <color key="tintColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="segmentChange:" destination="r7d-pN-bxh" eventType="valueChanged" id="jnd-SM-kJG"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMK-be-R3m">
+                                <rect key="frame" x="256" y="510" width="138" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="20"/>
+                                <state key="normal" title="Calculator" backgroundImage="frame">
+                                    <color key="titleColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculatorClick:" destination="r7d-pN-bxh" eventType="touchUpInside" id="C2f-Bx-568"/>
+                                    <segue destination="4vd-27-tvQ" kind="show" id="by3-Xa-8jO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More Information:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pY-co-TO4">
+                                <rect key="frame" x="67" y="383" width="282" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="22"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tools" id="YbH-Ti-9MD"/>
+                    <connections>
+                        <outlet property="MyImage" destination="ZyN-Il-D6h" id="uDw-Ow-8Bi"/>
+                        <outlet property="myBackgroundImage" destination="zDL-rk-Ibh" id="J5b-8Z-Sig"/>
+                        <outlet property="mySegment" destination="Fex-DY-v0B" id="DQR-3p-cn5"/>
+                        <outlet property="myTextfieldUrl" destination="gVx-jK-iMR" id="azN-Bd-ZyR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kp5-u0-PjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1892.753623188406" y="1869.2934782608697"/>
+        </scene>
+        <!--calculator-->
+        <scene sceneID="e2f-Gc-atd">
+            <objects>
+                <viewController id="4vd-27-tvQ" customClass="CalculatorViewController" customModule="Quizzards_Of_Kids" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ypv-qu-fy9"/>
+                        <viewControllerLayoutGuide type="bottom" id="86n-GW-tEh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xhq-Vt-LDa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bl4-Df-cBC">
+                                <rect key="frame" x="3" y="20" width="408" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Alr-hm-bBR">
+                                <rect key="frame" x="20" y="60" width="375" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="70"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v46-JF-LWu">
+                                <rect key="frame" x="19" y="301" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="4vd-27-tvQ" eventType="touchUpInside" id="OCf-XR-i5c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phx-Xh-DkM">
+                                <rect key="frame" x="114" y="301" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="4vd-27-tvQ" eventType="touchUpInside" id="lUV-JQ-78I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhB-ey-hHL">
+                                <rect key="frame" x="209" y="301" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="4vd-27-tvQ" eventType="touchUpInside" id="biB-Bb-ln4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nW-CD-Caq">
+                                <rect key="frame" x="19" y="396" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="4vd-27-tvQ" eventType="touchUpInside" id="1N7-EZ-WRW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQS-dz-Rdj">
+                                <rect key="frame" x="114" y="396" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="4vd-27-tvQ" eventType="touchUpInside" id="yfj-ec-kkW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAn-gP-dsn">
+                                <rect key="frame" x="209" y="396" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="4vd-27-tvQ" eventType="touchUpInside" id="Q6G-GF-1kC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vi-rT-iKH">
+                                <rect key="frame" x="19" y="491" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="4vd-27-tvQ" eventType="touchUpInside" id="G93-v9-4nm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x39-OL-XbY">
+                                <rect key="frame" x="114" y="491" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="4vd-27-tvQ" eventType="touchUpInside" id="i9W-ad-EzY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8J-bN-Pf1">
+                                <rect key="frame" x="209" y="491" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="4vd-27-tvQ" eventType="touchUpInside" id="OuU-Md-gtf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGi-G1-2BG">
+                                <rect key="frame" x="209" y="585" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28L-g0-wc3">
+                                <rect key="frame" x="304" y="301" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="x">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttons:" destination="4vd-27-tvQ" eventType="touchUpInside" id="rMq-Qb-fzW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Cv-4j-S00">
+                                <rect key="frame" x="19" y="206" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttons:" destination="4vd-27-tvQ" eventType="touchUpInside" id="lzt-fn-wpE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jyz-Ku-Oed">
+                                <rect key="frame" x="114" y="206" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuD-dT-kjO">
+                                <rect key="frame" x="209" y="206" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6N-p7-eEi">
+                                <rect key="frame" x="304" y="206" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="/">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttons:" destination="4vd-27-tvQ" eventType="touchUpInside" id="EDQ-na-R9t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcI-Ay-o7c">
+                                <rect key="frame" x="304" y="396" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttons:" destination="4vd-27-tvQ" eventType="touchUpInside" id="rdf-lS-EJE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZX-ap-hWz">
+                                <rect key="frame" x="304" y="491" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttons:" destination="4vd-27-tvQ" eventType="touchUpInside" id="cyY-Km-JpJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLI-ZV-Wym">
+                                <rect key="frame" x="303" y="585" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttons:" destination="4vd-27-tvQ" eventType="touchUpInside" id="c2Y-cb-BWn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9S-72-ao1">
+                                <rect key="frame" x="20" y="585" width="184" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="numbers:" destination="4vd-27-tvQ" eventType="touchUpInside" id="eX5-ui-6lg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="darkTextColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="calculator" id="LTl-yR-nca"/>
+                    <connections>
+                        <outlet property="label" destination="Alr-hm-bBR" id="WhZ-Dc-tQr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TYt-1g-nNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2799" y="1871"/>
+        </scene>
+        <!--Tools-->
+        <scene sceneID="eoG-9X-6lt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rNw-zQ-ebD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tools" image="tools" id="a5h-dk-6HE"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CmJ-8r-gvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="r7d-pN-bxh" kind="relationship" relationship="rootViewController" id="RfN-ef-1Pm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="41d-Tu-iOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.7101449275362" y="1870.9239130434785"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Hie-CZ-Kba"/>
+        <segue reference="YYW-Ip-3dh"/>
+        <segue reference="DDp-oB-POn"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="FBICON" width="225" height="225"/>
+        <image name="about" width="32" height="32"/>
+        <image name="background" width="375" height="667"/>
+        <image name="frame" width="302.5" height="129"/>
+        <image name="image3" width="275" height="183"/>
+        <image name="insIcon" width="512" height="512"/>
+        <image name="playNextButton" width="128" height="128"/>
+        <image name="playPreviousButton" width="128" height="128"/>
+        <image name="quiz" width="32" height="32"/>
+        <image name="score" width="302.5" height="129"/>
+        <image name="setting" width="32" height="32"/>
+        <image name="time" width="149" height="50.5"/>
+        <image name="tools" width="35" height="35"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="lightTextColor">
+            <color white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411764705878" green="0.44313725490196082" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

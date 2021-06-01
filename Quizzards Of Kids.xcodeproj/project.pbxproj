@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CE13FAB22DA28DE00C95BF3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE13FA922DA28DE00C95BF3 /* DetailViewController.m */; };
+		4CE13FAE22DA28F400C95BF3 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE13FAD22DA28F400C95BF3 /* TableViewController.m */; };
+		4CE13FB122DA290100C95BF3 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE13FAF22DA290100C95BF3 /* TableViewCell.m */; };
+		4CF67EC522D8EF29007CB6F1 /* FIQvideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4CF67EC222D8EF29007CB6F1 /* FIQvideo.mp4 */; };
+		4CF67EC622D8EF29007CB6F1 /* YNQvideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4CF67EC322D8EF29007CB6F1 /* YNQvideo.mp4 */; };
+		4CF67EC822D8F938007CB6F1 /* MCQvideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4CF67EC722D8F938007CB6F1 /* MCQvideo.mp4 */; };
+		590153BC22D83A1D00062EAE /* backgroundC.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 590153B922D83A1D00062EAE /* backgroundC.mp3 */; };
+		590153C222D85C0900062EAE /* tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 590153BF22D85C0900062EAE /* tap.mp3 */; };
+		5914B0DB22CCE5AD00BA3306 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5914B0DA22CCE5AD00BA3306 /* AppDelegate.m */; };
+		5914B0DE22CCE5AD00BA3306 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5914B0DD22CCE5AD00BA3306 /* ViewController.m */; };
+		5914B0E122CCE5AD00BA3306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5914B0DF22CCE5AD00BA3306 /* Main.storyboard */; };
+		5914B0E622CCE5AE00BA3306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5914B0E422CCE5AE00BA3306 /* LaunchScreen.storyboard */; };
+		5914B0E922CCE5AE00BA3306 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5914B0E822CCE5AE00BA3306 /* main.m */; };
+		5915D9B822D18ADD00AA7CCA /* McQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5915D9B722D18ADD00AA7CCA /* McQuizViewController.m */; };
+		591735C922D9D9F100E27567 /* backgroundA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 591735C722D9D9F000E27567 /* backgroundA.mp3 */; };
+		591735CA22D9D9F100E27567 /* backgroundB.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 591735C822D9D9F000E27567 /* backgroundB.mp3 */; };
+		591735CC22D9DB5A00E27567 /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 591735CB22D9DB5A00E27567 /* wrong.mp3 */; };
+		591735CE22D9DB5F00E27567 /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 591735CD22D9DB5F00E27567 /* correct.mp3 */; };
+		591735D122DA1C8800E27567 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591735D022DA1C8800E27567 /* AboutViewController.m */; };
+		591E0E0822D6E43B00233378 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591E0E0722D6E43B00233378 /* SettingViewController.m */; };
+		591E0E0B22D7102300233378 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 591E0E0A22D7102300233378 /* ResultViewController.m */; };
+		5921658422CF550000FC58BD /* HVD_Comic_Serif_Pro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5921658322CF54FF00FC58BD /* HVD_Comic_Serif_Pro.otf */; };
+		5921658722CF607400FC58BD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5921658622CF607400FC58BD /* AVFoundation.framework */; };
+		5921658922CF607E00FC58BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5921658822CF607E00FC58BD /* UIKit.framework */; };
+		5921658B22CF608900FC58BD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5921658A22CF608900FC58BD /* MediaPlayer.framework */; };
+		5921658E22CF627400FC58BD /* StartVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5921658D22CF627400FC58BD /* StartVideo.mp4 */; };
+		5921659022CF759600FC58BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5921658F22CF759600FC58BD /* Assets.xcassets */; };
+		59AF39C822DB059F009DA137 /* ToolController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AF39C622DB059F009DA137 /* ToolController.m */; };
+		59AF39CB22DB2082009DA137 /* FillQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AF39CA22DB2082009DA137 /* FillQuizViewController.m */; };
+		59AF39CE22DB20B4009DA137 /* TFQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AF39CD22DB20B4009DA137 /* TFQuizViewController.m */; };
+		59AF39D222DB8823009DA137 /* ViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AF39D122DB8823009DA137 /* ViewControllerTwo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4CE13FA922DA28DE00C95BF3 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		4CE13FAA22DA28DE00C95BF3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		4CE13FAC22DA28F400C95BF3 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		4CE13FAD22DA28F400C95BF3 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		4CE13FAF22DA290100C95BF3 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		4CE13FB022DA290100C95BF3 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		4CF67EC222D8EF29007CB6F1 /* FIQvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FIQvideo.mp4; sourceTree = "<group>"; };
+		4CF67EC322D8EF29007CB6F1 /* YNQvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = YNQvideo.mp4; sourceTree = "<group>"; };
+		4CF67EC722D8F938007CB6F1 /* MCQvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MCQvideo.mp4; sourceTree = "<group>"; };
+		590153B922D83A1D00062EAE /* backgroundC.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundC.mp3; sourceTree = "<group>"; };
+		590153BF22D85C0900062EAE /* tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tap.mp3; sourceTree = "<group>"; };
+		5914B0D622CCE5AD00BA3306 /* Quizzards Of Kids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quizzards Of Kids.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5914B0D922CCE5AD00BA3306 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5914B0DA22CCE5AD00BA3306 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5914B0DC22CCE5AD00BA3306 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5914B0DD22CCE5AD00BA3306 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5914B0E022CCE5AD00BA3306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5914B0E522CCE5AE00BA3306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5914B0E722CCE5AE00BA3306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5914B0E822CCE5AE00BA3306 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5915D9B622D18ADD00AA7CCA /* McQuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = McQuizViewController.h; sourceTree = "<group>"; };
+		5915D9B722D18ADD00AA7CCA /* McQuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = McQuizViewController.m; sourceTree = "<group>"; };
+		591735C722D9D9F000E27567 /* backgroundA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundA.mp3; sourceTree = "<group>"; };
+		591735C822D9D9F000E27567 /* backgroundB.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundB.mp3; sourceTree = "<group>"; };
+		591735CB22D9DB5A00E27567 /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
+		591735CD22D9DB5F00E27567 /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
+		591735CF22DA1C8800E27567 /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		591735D022DA1C8800E27567 /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		591E0E0622D6E43B00233378 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		591E0E0722D6E43B00233378 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		591E0E0922D7102300233378 /* ResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		591E0E0A22D7102300233378 /* ResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		5921658322CF54FF00FC58BD /* HVD_Comic_Serif_Pro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HVD_Comic_Serif_Pro.otf; sourceTree = "<group>"; };
+		5921658622CF607400FC58BD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5921658822CF607E00FC58BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5921658A22CF608900FC58BD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		5921658D22CF627400FC58BD /* StartVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = StartVideo.mp4; sourceTree = "<group>"; };
+		5921658F22CF759600FC58BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59AF39C322DB059E009DA137 /* Quizzards Of Kids-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quizzards Of Kids-Bridging-Header.h"; sourceTree = "<group>"; };
+		59AF39C422DB059F009DA137 /* ToolController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolController.h; sourceTree = "<group>"; };
+		59AF39C622DB059F009DA137 /* ToolController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolController.m; sourceTree = "<group>"; };
+		59AF39C922DB2082009DA137 /* FillQuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FillQuizViewController.h; sourceTree = "<group>"; };
+		59AF39CA22DB2082009DA137 /* FillQuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FillQuizViewController.m; sourceTree = "<group>"; };
+		59AF39CC22DB20B4009DA137 /* TFQuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQuizViewController.h; sourceTree = "<group>"; };
+		59AF39CD22DB20B4009DA137 /* TFQuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQuizViewController.m; sourceTree = "<group>"; };
+		59AF39D022DB8823009DA137 /* ViewControllerTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerTwo.h; sourceTree = "<group>"; };
+		59AF39D122DB8823009DA137 /* ViewControllerTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTwo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5914B0D322CCE5AD00BA3306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5921658B22CF608900FC58BD /* MediaPlayer.framework in Frameworks */,
+				5921658922CF607E00FC58BD /* UIKit.framework in Frameworks */,
+				5921658722CF607400FC58BD /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		590153B622D83A1D00062EAE /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				591735C722D9D9F000E27567 /* backgroundA.mp3 */,
+				591735C822D9D9F000E27567 /* backgroundB.mp3 */,
+				590153B922D83A1D00062EAE /* backgroundC.mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		590153BD22D85C0900062EAE /* Sound effect  */ = {
+			isa = PBXGroup;
+			children = (
+				591735CB22D9DB5A00E27567 /* wrong.mp3 */,
+				591735CD22D9DB5F00E27567 /* correct.mp3 */,
+				590153BF22D85C0900062EAE /* tap.mp3 */,
+			);
+			path = "Sound effect ";
+			sourceTree = "<group>";
+		};
+		5914B0CD22CCE5AD00BA3306 = {
+			isa = PBXGroup;
+			children = (
+				5914B0D822CCE5AD00BA3306 /* Quizzards Of Kids */,
+				5914B0D722CCE5AD00BA3306 /* Products */,
+				5921658F22CF759600FC58BD /* Assets.xcassets */,
+				5921658522CF607400FC58BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5914B0D722CCE5AD00BA3306 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5914B0D622CCE5AD00BA3306 /* Quizzards Of Kids.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5914B0D822CCE5AD00BA3306 /* Quizzards Of Kids */ = {
+			isa = PBXGroup;
+			children = (
+				5914B0D922CCE5AD00BA3306 /* AppDelegate.h */,
+				5914B0DA22CCE5AD00BA3306 /* AppDelegate.m */,
+				5914B0DC22CCE5AD00BA3306 /* ViewController.h */,
+				5914B0DD22CCE5AD00BA3306 /* ViewController.m */,
+				59AF39D022DB8823009DA137 /* ViewControllerTwo.h */,
+				59AF39D122DB8823009DA137 /* ViewControllerTwo.m */,
+				5915D9B622D18ADD00AA7CCA /* McQuizViewController.h */,
+				5915D9B722D18ADD00AA7CCA /* McQuizViewController.m */,
+				59AF39C922DB2082009DA137 /* FillQuizViewController.h */,
+				59AF39CA22DB2082009DA137 /* FillQuizViewController.m */,
+				59AF39CC22DB20B4009DA137 /* TFQuizViewController.h */,
+				59AF39CD22DB20B4009DA137 /* TFQuizViewController.m */,
+				591E0E0922D7102300233378 /* ResultViewController.h */,
+				591E0E0A22D7102300233378 /* ResultViewController.m */,
+				591E0E0622D6E43B00233378 /* SettingViewController.h */,
+				591E0E0722D6E43B00233378 /* SettingViewController.m */,
+				591735CF22DA1C8800E27567 /* AboutViewController.h */,
+				591735D022DA1C8800E27567 /* AboutViewController.m */,
+				4CE13FB022DA290100C95BF3 /* TableViewCell.h */,
+				4CE13FAF22DA290100C95BF3 /* TableViewCell.m */,
+				4CE13FAC22DA28F400C95BF3 /* TableViewController.h */,
+				4CE13FAD22DA28F400C95BF3 /* TableViewController.m */,
+				4CE13FAA22DA28DE00C95BF3 /* DetailViewController.h */,
+				4CE13FA922DA28DE00C95BF3 /* DetailViewController.m */,
+				59AF39C422DB059F009DA137 /* ToolController.h */,
+				59AF39C622DB059F009DA137 /* ToolController.m */,
+				5914B0DF22CCE5AD00BA3306 /* Main.storyboard */,
+				5914B0E422CCE5AE00BA3306 /* LaunchScreen.storyboard */,
+				5914B0E722CCE5AE00BA3306 /* Info.plist */,
+				5914B0E822CCE5AE00BA3306 /* main.m */,
+				590153BD22D85C0900062EAE /* Sound effect  */,
+				590153B622D83A1D00062EAE /* Music */,
+				5921658C22CF627400FC58BD /* Movies */,
+				5921658222CF54FF00FC58BD /* Font */,
+				59AF39C322DB059E009DA137 /* Quizzards Of Kids-Bridging-Header.h */,
+			);
+			path = "Quizzards Of Kids";
+			sourceTree = "<group>";
+		};
+		5921658222CF54FF00FC58BD /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				5921658322CF54FF00FC58BD /* HVD_Comic_Serif_Pro.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		5921658522CF607400FC58BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5921658A22CF608900FC58BD /* MediaPlayer.framework */,
+				5921658822CF607E00FC58BD /* UIKit.framework */,
+				5921658622CF607400FC58BD /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5921658C22CF627400FC58BD /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				4CF67EC222D8EF29007CB6F1 /* FIQvideo.mp4 */,
+				4CF67EC722D8F938007CB6F1 /* MCQvideo.mp4 */,
+				4CF67EC322D8EF29007CB6F1 /* YNQvideo.mp4 */,
+				5921658D22CF627400FC58BD /* StartVideo.mp4 */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5914B0D522CCE5AD00BA3306 /* Quizzards Of Kids */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5914B0EC22CCE5AE00BA3306 /* Build configuration list for PBXNativeTarget "Quizzards Of Kids" */;
+			buildPhases = (
+				5914B0D222CCE5AD00BA3306 /* Sources */,
+				5914B0D322CCE5AD00BA3306 /* Frameworks */,
+				5914B0D422CCE5AD00BA3306 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Quizzards Of Kids";
+			productName = "Quizzards Of Kids";
+			productReference = 5914B0D622CCE5AD00BA3306 /* Quizzards Of Kids.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5914B0CE22CCE5AD00BA3306 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = EG114402/1C;
+				TargetAttributes = {
+					5914B0D522CCE5AD00BA3306 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = 5914B0D122CCE5AD00BA3306 /* Build configuration list for PBXProject "Quizzards Of Kids" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5914B0CD22CCE5AD00BA3306;
+			productRefGroup = 5914B0D722CCE5AD00BA3306 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5914B0D522CCE5AD00BA3306 /* Quizzards Of Kids */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5914B0D422CCE5AD00BA3306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				590153BC22D83A1D00062EAE /* backgroundC.mp3 in Resources */,
+				4CF67EC522D8EF29007CB6F1 /* FIQvideo.mp4 in Resources */,
+				591735CC22D9DB5A00E27567 /* wrong.mp3 in Resources */,
+				591735C922D9D9F100E27567 /* backgroundA.mp3 in Resources */,
+				5914B0E622CCE5AE00BA3306 /* LaunchScreen.storyboard in Resources */,
+				591735CE22D9DB5F00E27567 /* correct.mp3 in Resources */,
+				5921658E22CF627400FC58BD /* StartVideo.mp4 in Resources */,
+				5921658422CF550000FC58BD /* HVD_Comic_Serif_Pro.otf in Resources */,
+				591735CA22D9D9F100E27567 /* backgroundB.mp3 in Resources */,
+				590153C222D85C0900062EAE /* tap.mp3 in Resources */,
+				5914B0E122CCE5AD00BA3306 /* Main.storyboard in Resources */,
+				4CF67EC822D8F938007CB6F1 /* MCQvideo.mp4 in Resources */,
+				5921659022CF759600FC58BD /* Assets.xcassets in Resources */,
+				4CF67EC622D8EF29007CB6F1 /* YNQvideo.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5914B0D222CCE5AD00BA3306 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59AF39D222DB8823009DA137 /* ViewControllerTwo.m in Sources */,
+				5914B0DE22CCE5AD00BA3306 /* ViewController.m in Sources */,
+				59AF39C822DB059F009DA137 /* ToolController.m in Sources */,
+				5914B0E922CCE5AE00BA3306 /* main.m in Sources */,
+				59AF39CB22DB2082009DA137 /* FillQuizViewController.m in Sources */,
+				59AF39CE22DB20B4009DA137 /* TFQuizViewController.m in Sources */,
+				5914B0DB22CCE5AD00BA3306 /* AppDelegate.m in Sources */,
+				4CE13FB122DA290100C95BF3 /* TableViewCell.m in Sources */,
+				4CE13FAB22DA28DE00C95BF3 /* DetailViewController.m in Sources */,
+				4CE13FAE22DA28F400C95BF3 /* TableViewController.m in Sources */,
+				591735D122DA1C8800E27567 /* AboutViewController.m in Sources */,
+				5915D9B822D18ADD00AA7CCA /* McQuizViewController.m in Sources */,
+				591E0E0822D6E43B00233378 /* SettingViewController.m in Sources */,
+				591E0E0B22D7102300233378 /* ResultViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5914B0DF22CCE5AD00BA3306 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5914B0E022CCE5AD00BA3306 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5914B0E422CCE5AE00BA3306 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5914B0E522CCE5AE00BA3306 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5914B0EA22CCE5AE00BA3306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5914B0EB22CCE5AE00BA3306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5914B0ED22CCE5AE00BA3306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Quizzards Of Kids/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vtc.Quizzards-Of-Kids";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quizzards Of Kids/Quizzards Of Kids-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5914B0EE22CCE5AE00BA3306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Quizzards Of Kids/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vtc.Quizzards-Of-Kids";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quizzards Of Kids/Quizzards Of Kids-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5914B0D122CCE5AD00BA3306 /* Build configuration list for PBXProject "Quizzards Of Kids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5914B0EA22CCE5AE00BA3306 /* Debug */,
+				5914B0EB22CCE5AE00BA3306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5914B0EC22CCE5AE00BA3306 /* Build configuration list for PBXNativeTarget "Quizzards Of Kids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5914B0ED22CCE5AE00BA3306 /* Debug */,
+				5914B0EE22CCE5AE00BA3306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5914B0CE22CCE5AD00BA3306 /* Project object */;
+}
